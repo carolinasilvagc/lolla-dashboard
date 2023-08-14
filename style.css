@@ -5,7 +5,7 @@
   --color-primary: #7380ec;
   --color-danger: #ff7782;
   --color-success: #41f1b6;
-  --color-warning: ##ffbb55;
+  --color-warning: #ffbb55;
   --color-white: #fff;
   --color-info-dark: #7d8da1;
   --color-info-light: #dce1eb;
@@ -336,4 +336,45 @@ main .insights .progress .number {
 main .insights small {
   margin-top: 1.6rem;
   display: block;
+}
+
+/* -------------- PEDIDOS RECENTES -------------- */
+
+main .recent-orders {
+  margin-top: 2rem;
+}
+
+main .recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+  background-color: var(--color-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+main .recent-orders table:hover {
+  box-shadow: none;
+}
+
+main table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child {
+  border: none;
+}
+
+main a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: var(--color-primary);
 }
